@@ -6,16 +6,21 @@ def subtract(a, b):
     """This function takes two numbers as input and returns their difference."""
     return a - b
 
+def multiply(a, b):
+    """This function takes two numbers as input and returns their product."""
+    return a * b
+
 def show_operations():
     print("Available operations:")
     print("1. Addition")
     print("2. Subtraction")
-    print("3. exit")
+    print("3. Multiplication")
+    print("4. exit")
 
 def main():
     while True:
         show_operations()
-        choice = input("Select an operation (1/2/3): ")
+        choice = input("Select an operation (1/2/3/4): ")
 
         if choice == '1':
             a = float(input("Enter first number: "))
@@ -28,6 +33,11 @@ def main():
             result = subtract(a, b)
             print(f"The result of subtraction is: {result}")
         elif choice == '3':
+            a = float(input("Enter first number: "))
+            b = float(input("Enter second number: "))
+            result = multiply(a, b)
+            print(f"The result of multiplication is: {result}")
+        elif choice == '4':             
             print("Exiting the calculator. Goodbye!")
             break
         else:
