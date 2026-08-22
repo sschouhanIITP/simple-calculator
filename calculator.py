@@ -1,7 +1,9 @@
 def add(a, b):
+    """This function takes two numbers as input and returns their sum."""
     return a + b
 
 def subtract(a, b):
+    """This function takes two numbers as input and returns their difference."""
     return a - b
 
 def show_operations():
@@ -33,4 +35,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
