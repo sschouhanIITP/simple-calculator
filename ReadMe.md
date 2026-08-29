@@ -1,6 +1,6 @@
 #Simple calculator
 A basic calculator built in python, for demonstrating git and github
-- sqaure root (coming soon) 
+- Percentage calculation (coming soon) 
 ## How to run
 
 ```
