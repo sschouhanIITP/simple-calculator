@@ -1,4 +1,5 @@
 #Simple Calculator in python
+#it only performs basic operations like addition, subtraction, multiplication and division
 def add(a, b):
     """This function takes two numbers as input and returns their sum."""
     return a + b
