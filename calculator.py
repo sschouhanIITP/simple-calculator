@@ -7,6 +7,9 @@ def add(a, b):
 def subtract(a, b):
     """This function takes two numbers as input and returns their difference."""
     return a - b
+def power(a, b):
+    """This function takes two numbers as input and returns the first number raised to the power of the second number."""
+    return a ** b
 
 def multiply(a, b):
     """This function takes two numbers as input and returns their product."""
@@ -22,12 +25,13 @@ def show_operations():
     print("2. Subtraction")
     print("3. Multiplication")
     print("4. Division")
-    print("5. exit")
+    print("5. Power")
+    print("6. exit")
 
 def main():
     while True:
         show_operations()
-        choice = input("Select an operation (1/2/3/4/5): ")
+        choice = input("Select an operation (1/2/3/4/5/6): ")
 
         if choice == '1':
             a = float(input("Enter first number: "))
@@ -50,6 +54,11 @@ def main():
             result = divide(a, b)
             print(f"The result of division is: {result}")
         elif choice == '5':
+            a = float(input("Enter first number: "))
+            b = float(input("Enter second number: "))
+            result = power(a, b)
+            print(f"The result of power is: {result}")
+        elif choice == '6':         
             print("Exiting the calculator. Goodbye!")
             break
         else:
